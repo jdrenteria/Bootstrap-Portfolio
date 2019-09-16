@@ -1,56 +1,67 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-	<title>Contact</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <title>Bootstrap Portfolio-Contact </title>
+  <link rel="stylesheet" type="text/css" href="assets/resset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-    
-            <!--Logo-->
-            <div class="navbar-header">
-                <a href="index.html" class="navbar-brand">Jesus Renteria</a>
-            </div>
-            <!--Page Links-->
-            <div>
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Index</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-    
-            
+
+  <header>
+    <nav class="navbar navbar-default">
+     <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html" id="logo">Jesus Renteria</a>
         </div>
-       </nav>
-	</header>
-	<div class="container">
-            <hr class="top-heavy">
-		<section id="contact">
-			<h2 class="top">Contact</h2>
-            <hr class="heavy">
-			<form action="">
-			<fieldset>
-				<legend></legend>
-				<label for="name">Name</label>
-				<br>
-				<input type="text" id="name" name="fullname" placeholder="John Smith">
-				<br>
-				<label for="email">Email</label>
-				<br>
-				<input type="email" id="email" name="fullemail" placeholder="example@gmail.com" required>
-				<br>
-				<label for="message">Message</label>
-				<br>
-				<input type="textarea" id="message">
-				<br>
-				<input type="submit">
-			</fieldset>	
-			</form>
-		</section>
-	</div>
-	<footer>&copy; Copyright 2019</footer>
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="main-container" class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12 col-sx-12">
+        <section class="main-section">
+          <h1>Contact</h1>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <ul>
+                <li>
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="John Smith" required="required">
+                </li>
+                <li>
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com" required="required">
+                </li>
+                <li>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required="required" rows="10" cols="100"></textarea>
+                </li>
+              </ul>
+            </div>
+            <input type="submit">
+          </form>
+
+        </section>
+
+      </div>
+      
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      &copy; Cooyright 2019
+    </div>
+  </footer>
 </body>
+
 </html>
